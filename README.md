@@ -13,7 +13,7 @@ For a comprehensive walkthrough of this architecture, check out my Medium articl
 
 ## Architecture Overview
 
-![Architecture Diagram](/architecture.gif)
+![Architecture Diagram](/vpc_peering_rchitecture.gif)
 
 The infrastructure consists of two VPCs in the Stockholm (eu-north-1) region:
 
