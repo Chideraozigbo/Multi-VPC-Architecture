@@ -30,7 +30,7 @@ module "vpc_a_public_subnet" {
   source = "github.com/Chideraozigbo/My-Terraform-Modules.git/modules/subnets?ref=v1.0.0"
 
   vpc_id                  = module.vpc_a.vpc_id
-  cidr_block              = "10.10.0.0/28"
+  cidr_block              = "10.10.0.0/24"
   availability_zone       = "eu-north-1a"
   map_public_ip_on_launch = true
   subnet_name             = "${module.vpc_a.vpc_name}-public"
@@ -42,7 +42,7 @@ module "vpc_a_private_subnet" {
   source = "github.com/Chideraozigbo/My-Terraform-Modules.git/modules/subnets?ref=v1.0.0"
 
   vpc_id                  = module.vpc_a.vpc_id
-  cidr_block              = "10.10.0.16/28"
+  cidr_block              = "10.10.0.16/24"
   availability_zone       = "eu-north-1a"
   map_public_ip_on_launch = false
   subnet_name             = "${module.vpc_a.vpc_name}-private"
@@ -55,7 +55,7 @@ module "vpc_b_private_subnet" {
   source = "github.com/Chideraozigbo/My-Terraform-Modules.git/modules/subnets?ref=v1.0.0"
 
   vpc_id                  = module.vpc_b.vpc_id
-  cidr_block              = "10.100.0.0/28"
+  cidr_block              = "10.100.0.0/24"
   availability_zone       = "eu-north-1b"
   map_public_ip_on_launch = false
   subnet_name             = "${module.vpc_b.vpc_name}-private"
