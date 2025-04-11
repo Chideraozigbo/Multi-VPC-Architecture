@@ -2,9 +2,9 @@
 
 ## Background Story
 
-As a data engineer, I've often found myself jumping between tools, environments, and use cases from analytics pipelines to ML model deployments. But as our workloads began to scale, so did our need for a secure, highly available, and automatable infrastructure setup.
+As a data engineer, I’ve often found myself jumping between tools, environments, and use cases from analytics pipelines to ML model deployments. But as our workloads began to scale, so did our need for a secure, highly available, and automatable infrastructure setup.
 
-That's when I decided to bring structure to the picture. I designed a VPC-based architecture on AWS that not only supports a hybrid workload with public and private subnets but also enables cross VPC communication via VPC peering. Of course, as a fan of Infrastructure as Code (IaC), I went with Terraform to automate and version control the entire setup.
+That’s when I decided to bring structure to the picture. I designed a VPC-based architecture on AWS that not only supports a hybrid workload with public and private subnets but also enables cross VPC communication via VPC peering. As an Infrastructure data driven engineer who uses Infrastructure as Code (IaC), I went with Terraform to automate and version control the entire setup.
 
 ## Medium Article
 
