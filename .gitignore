@@ -5,3 +5,4 @@ terraform/terraform.tfstate.backup
 **/.DS_Store
 architecture.dio
 architecture.gif
+vpc_peering_rchitecture.gif

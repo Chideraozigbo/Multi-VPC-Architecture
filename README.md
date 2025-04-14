@@ -13,7 +13,7 @@ For a comprehensive walkthrough of this architecture, check out my Medium articl
 
 ## Architecture Overview
 
-![Architecture Diagram](/vpc_peering_rchitecture.gif)
+![Architecture Diagram](/vpc_peering_architecture.gif)
 
 The infrastructure consists of two VPCs in the Stockholm (eu-north-1) region:
 
@@ -30,8 +30,8 @@ Both VPCs are connected via VPC Peering to enable secure communication between t
 - **CIDR Block**: 10.10.0.0/16
 - **Availability Zone**: eu-north-1a
 - **Components**:
-  - Public subnet (10.10.0.0/28) - For internet-facing resources
-  - Private subnet (10.10.0.16/28) - For protected resources
+  - Public subnet (10.10.0.0/24) - For internet-facing resources
+  - Private subnet (10.10.1.0/24) - For protected resources
   - Internet Gateway - Enables communication with the internet
   - Security Groups - Controlling inbound/outbound traffic
 
@@ -39,7 +39,7 @@ Both VPCs are connected via VPC Peering to enable secure communication between t
 - **CIDR Block**: 10.100.0.0/16
 - **Availability Zone**: eu-north-1b
 - **Components**:
-  - Private subnet (10.100.0.0/28) - For secure analytics processing
+  - Private subnet (10.100.0.0/24) - For secure analytics processing
   - Security Groups - Controlling inbound/outbound traffic
 
 ### Communication Flow
